@@ -46,9 +46,50 @@ It is implemented under multi-gpu setting using data parallel.
 
 ### How to train 
 
+```shell 
 
+```
 
 ### Result 
+
+1. Baseline 
+
+| Model 	| Dataset 	| Batch size | Learning rate | Weight decay | Accuracy(test) 	|
+|:---------:|:--------:|:---------------------------------------:|:-----:|:---:|:---:|
+| Base(ViT) 	| MVTec-AD 	| 32 |  	| | |
+| Moco 	| MVTec-AD  	| 32 |  	| | |
+| DINO	| MVTec-AD  	| 32 |  	| | |
+| IBOT 	| MVTec-AD  	| 32 |  	| | |
+
+2. Baseline with augmentation 
+
+| Model 	| Dataset 	| Batch size | Learning rate | Weight decay | Accuracy(test) 	|
+|:---------:|:--------:|:---------------------------------------:|:-----:|:---:|:---:|
+| Base(ViT) 	| MVTec-AD 	| 32 |  	| | |
+| Moco 	| MVTec-AD  	| 32 |  	| | |
+| DINO	| MVTec-AD  	| 32 |  	| | |
+| IBOT 	| MVTec-AD  	| 32 |  	| | |
+
+3. Baseline with train augmentation 
+
+| Model 	| Dataset 	| Batch size | Learning rate | Weight decay | Accuracy(test) 	|
+|:---------:|:--------:|:---------------------------------------:|:-----:|:---:|:---:|
+| Base(ViT) 	| MVTec-AD 	| 32 |  	| | |
+| Moco 	| MVTec-AD  	| 32 |  	| | |
+| DINO	| MVTec-AD  	| 32 |  	| | |
+| IBOT 	| MVTec-AD  	| 32 |  	| | |
+
+4. Baseline with focal loss 
+
+| Model 	| Dataset 	| Batch size | Learning rate | Weight decay | Accuracy(test) 	|
+|:---------:|:--------:|:---------------------------------------:|:-----:|:---:|:---:|
+| Base(ViT) 	| MVTec-AD 	| 32 |  	| | |
+| Moco 	| MVTec-AD  	| 32 |  	| | |
+| DINO	| MVTec-AD  	| 32 |  	| | |
+| IBOT 	| MVTec-AD  	| 32 |  	| | |
+
+
+
 
 
 ### Reference 
