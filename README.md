@@ -28,7 +28,7 @@ Our team used the MVTec AD dataset provided by [MVTec AD Research](https://www.m
 
 ## Data augmentation 
 
-We experimented with different augmentation for each class object following the paper [5] below. It was implemented on "augmentation.py"
+We experimented with different augmentation for each class object following the paper[5] below. It was implemented on "augmentation.py"
 
 <img width="606" alt="스크린샷 2022-06-02 오후 5 13 47" src="https://user-images.githubusercontent.com/52492949/171585717-8631dc48-9439-4ab7-9659-e3e027820d19.png"> 
 
@@ -92,7 +92,7 @@ Baseline + Augmentation + Add the train data(outlier)
 | DINO	| MVTec-AD  	| 32 | 5e-6 	| 1e-1| 75.8|
 | iBOT 	| MVTec-AD  	| 32 | 1e-5 	| 1e-1 | 80.41|
 
-Baseline + Augmentation + Add the train data(outlier) + Focal loss [6] 
+Baseline + Augmentation + Add the train data(outlier) + Focal loss[6] 
 
 | Model 	| Dataset 	| Batch size | Learning rate | Weight decay | Accuracy(test) 	|
 |:---------:|:--------:|:---------------------------------------:|:-----:|:---:|:---:|
