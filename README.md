@@ -107,11 +107,11 @@ Baseline + Augmentation + Add the train data(outlier) + Focal loss[5]
 
 ### Reference 
 
-[1] [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929)   \\
-[2] [Momentum Contrast for Unsupervised Visual Representation Learning](https://arxiv.org/abs/1911.05722).  \\
-[3] [Emerging Properties in Self-Supervised Vision Transformers](https://arxiv.org/abs/2104.14294).  \\
-[4] [iBOT: Image BERT Pre-Training with Online Tokenizer](https://arxiv.org/abs/2111.07832).  \\
-[5] [Focal Loss for Dense Object Detection](https://arxiv.org/abs/1708.02002)
+- [1] [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929).   
+- [2] [Momentum Contrast for Unsupervised Visual Representation Learning](https://arxiv.org/abs/1911.05722).  
+- [3] [Emerging Properties in Self-Supervised Vision Transformers](https://arxiv.org/abs/2104.14294).  
+- [4] [iBOT: Image BERT Pre-Training with Online Tokenizer](https://arxiv.org/abs/2111.07832).  
+- [5] [Focal Loss for Dense Object Detection](https://arxiv.org/abs/1708.02002).
 
 
 
