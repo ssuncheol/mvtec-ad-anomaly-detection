@@ -35,7 +35,7 @@ It was experimented with defferent augmentation for each object referring to the
 
 ## Model 
 
-Our team using ViT, Moco, DINO, iBOT. 
+Our team using ViT[1], Moco[2], DINO[3], iBOT[4]. 
 
 ### Usage 
 
@@ -92,7 +92,7 @@ Baseline + Augmentation + Add the train data(outlier)
 | DINO	| MVTec-AD  	| 32 | 5e-6 	| 1e-1| 75.8|
 | iBOT 	| MVTec-AD  	| 32 | 1e-5 	| 1e-1 | 80.41|
 
-Baseline + Augmentation + Add the train data(outlier) + Focal loss 
+Baseline + Augmentation + Add the train data(outlier) + Focal loss[5] 
 
 | Model 	| Dataset 	| Batch size | Learning rate | Weight decay | Accuracy(test) 	|
 |:---------:|:--------:|:---------------------------------------:|:-----:|:---:|:---:|
@@ -107,11 +107,11 @@ Baseline + Augmentation + Add the train data(outlier) + Focal loss
 
 ### Reference 
 
-- [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929)
-- [Momentum Contrast for Unsupervised Visual Representation Learning](https://arxiv.org/abs/1911.05722)
-- [Emerging Properties in Self-Supervised Vision Transformers](https://arxiv.org/abs/2104.14294)
-- [iBOT: Image BERT Pre-Training with Online Tokenizer](https://arxiv.org/abs/2111.07832)
-- [Focal Loss for Dense Object Detection](https://arxiv.org/abs/1708.02002)
+- [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale[1]](https://arxiv.org/abs/2010.11929)
+- [Momentum Contrast for Unsupervised Visual Representation Learning[2]](https://arxiv.org/abs/1911.05722)
+- [Emerging Properties in Self-Supervised Vision Transformers[3]](https://arxiv.org/abs/2104.14294)
+- [iBOT: Image BERT Pre-Training with Online Tokenizer[4]](https://arxiv.org/abs/2111.07832)
+- [Focal Loss for Dense Object Detection[5]](https://arxiv.org/abs/1708.02002)
 
 
 
