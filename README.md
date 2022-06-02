@@ -108,7 +108,7 @@ Baseline + Augmentation + Add the train data(outlier) + Focal loss
 - [Momentum Contrast for Unsupervised Visual Representation Learning](https://arxiv.org/abs/1911.05722, "Moco")
 - [Emerging Properties in Self-Supervised Vision Transformers](https://arxiv.org/abs/2104.14294, 'DINO')
 - [iBOT: Image BERT Pre-Training with Online Tokenizer](https://arxiv.org/abs/2111.07832, "IBOT")
-- [Focal Loss for Dense Object Detection](https://arxiv.org/abs/1708.02002, "Focal loss")
+- [Focal Loss for Dense Object Detection](https://arxiv.org/abs/1708.02002)
 
 
 
