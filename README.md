@@ -35,15 +35,12 @@ Our team use ViT, Moco, DINO, IBOT.
 
 | Args 	| Type 	| Description 	| Default|
 |:---------:|:--------:|:----------------------------------------------------:|:-----:|
-| Epochs 	| [int] 	| Epochs | 300|
-| Batch_size 	| [int] 	| Batch size| 1024|
-| Model 	| [str]	| Vision Transformer| 	vit|
-| Optimizer 	| [str]	| Adam, Adamw| 	AdamW|
-| Weight_decay 	| [float]	| Weight decay | 0.3|
-| T_max 	| [int]	| Cosine Annealing step | 80000 |
-| Dropout 	| [float]	| Dropout | 0.0|
-| World_size 	| [int]	| World size | 8 |
-
+| Mode 	| [str] 	| IBOT, Moco, DINO, BASE | BASE|
+| Epochs 	| [int] 	| Number of training epochs| 25|
+| Batch size | [int]	| Training batch size| 32|
+| Learning rate 	| [float]	| Learning rate| 	5e-5|
+| Weight_decay 	| [float]	| Weight decay | 5e-3|
+| FL 	| [bool]	| Using focal loss | False|
 
 ### How to train 
 
