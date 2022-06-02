@@ -6,10 +6,10 @@ This project conducted a comparative experiment on the anomaly detection perform
 ## Requirements 
 
 ```shell
-Cuda 11.0
-Python3 3.8
-PyTorch 1.8
-Torchvision 0.10.0
+Cuda >= 10.2
+Python3 >= 3.7
+PyTorch >= 1.8.0
+Torchvision >= 0.10.0
 Imgaug # 
 ``` 
 
@@ -29,7 +29,9 @@ Our team used the MVTec AD dataset provided by [MVTec AD Research](https://www.m
 
 Our team using ViT, Moco, DINO, IBOT. 
 
-## Experiments 
+### Usage 
+
+It is implemented under multi-gpu setting using data parallel. 
 
 ### Arguments 
 
@@ -44,8 +46,6 @@ Our team using ViT, Moco, DINO, IBOT.
 
 ### How to train 
 
-
-### How to eval 
 
 
 ### Result 
