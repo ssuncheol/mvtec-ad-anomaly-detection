@@ -52,7 +52,7 @@ It is implemented under multi-gpu setting using data parallel.
 
 ### Result 
 
-1. Baseline 
+Baseline 
 
 | Model 	| Dataset 	| Batch size | Learning rate | Weight decay | Accuracy(test) 	|
 |:---------:|:--------:|:---------------------------------------:|:-----:|:---:|:---:|
@@ -61,7 +61,7 @@ It is implemented under multi-gpu setting using data parallel.
 | DINO	| MVTec-AD  	| 32 | 5e-6 	| 1e-1| 60.95|
 | IBOT 	| MVTec-AD  	| 32 | 1e-5 	| 1e-1 | 63.86|
 
-2. + Augmentation 
+Baseline + Augmentation 
 
 | Model 	| Dataset 	| Batch size | Learning rate | Weight decay | Accuracy(test) 	|
 |:---------:|:--------:|:---------------------------------------:|:-----:|:---:|:---:|
@@ -70,7 +70,7 @@ It is implemented under multi-gpu setting using data parallel.
 | DINO	| MVTec-AD  	| 32 | 5e-6 	| 1e-1| 71.8|
 | IBOT 	| MVTec-AD  	| 32 |  1e-5 	| 1e-1 | 73.25|
 
-3. + Add the train data(outlier) 
+Baseline + Augmentation + Add the train data(outlier) 
 
 | Model 	| Dataset 	| Batch size | Learning rate | Weight decay | Accuracy(test) 	|
 |:---------:|:--------:|:---------------------------------------:|:-----:|:---:|:---:|
@@ -79,7 +79,7 @@ It is implemented under multi-gpu setting using data parallel.
 | DINO	| MVTec-AD  	| 32 | 5e-6 	| 1e-1| 75.8|
 | IBOT 	| MVTec-AD  	| 32 | 1e-5 	| 1e-1 | 80.41|
 
-4. + Focal loss 
+Baseline + Augmentation + Add the train data(outlier) + Focal loss 
 
 | Model 	| Dataset 	| Batch size | Learning rate | Weight decay | Accuracy(test) 	|
 |:---------:|:--------:|:---------------------------------------:|:-----:|:---:|:---:|
