@@ -13,27 +13,27 @@ Torchvision >= 0.10.0
 Imgaug # 
 ``` 
 
-## Quickstart 
+# Quickstart 
 
-### Cloning a repository 
+## Cloning a repository 
 
 ```shell
 git clone https://github.com/tjtmddnjswkd/DL_TEAM_PROJECT.git 
 ```
 
-### Prepare a dataset
+## Prepare a dataset
 
 Our team used the MVTec AD dataset provided by [MVTec AD Research](https://www.mvtec.com/company/research/datasets/mvtec-ad, "mvtec-ad"). The MVTec AD Dataset consists of n trains and m validation sets. In the case of the above task, there are 15 tasks to be classified.
 
 
-### Data augmentation 
+## Data augmentation 
 
 It was experimented with defferent augmentation for each object referring to the paper below. It was implemented on "augmentation.py"
 
 <img width="606" alt="스크린샷 2022-06-02 오후 5 13 47" src="https://user-images.githubusercontent.com/52492949/171585717-8631dc48-9439-4ab7-9659-e3e027820d19.png">
 
 
-### Model 
+## Model 
 
 Our team using ViT, Moco, DINO, iBOT. 
 
