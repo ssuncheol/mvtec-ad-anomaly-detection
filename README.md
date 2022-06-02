@@ -27,7 +27,7 @@ Our team used the MVTec AD dataset provided by [MVTec AD Research](https://www.m
 
 ### Model 
 
-Our team use ViT, Moco, DINO, IBOT. 
+Our team using ViT, Moco, DINO, IBOT. 
 
 ## Experiments 
 
