@@ -54,13 +54,13 @@ It is implemented under multi-gpu setting using data parallel.
 
 ### How to train 
 
-First, a hyper-parameter setting suitable for each model was found through grid search algorithm. In this project, after finding the optimal hyper-parameter for each model, experiments were conducted based on various conditions. The experiment proceeded as follows. 
+First, a hyper-parameter setting suitable for each model was found through greedy search. In this project, after finding the optimal hyper-parameter for each model, experiments were conducted based on various conditions. The experiment proceeded as follows. 
 
 ```shell 
 CUDA_VISIBLE_DEVICES=0,1 python3 main.py --mode BASE --lr 5e-5 --wd 1e-4 --FL True & 
-CUDA_VISIBLE_DEVICES=2,3 python3 main.py --mode MOCO --lr 1e-4 --wd 1e-2 --FL True &
 CUDA_VISIBLE_DEVICES=4,5 python3 main.py --mode DINO --lr 5e-6 --wd 1e-1 --FL True &
-CUDA_VISIBLE_DEVICES=6,7 python3 main.py --mode IBOT --lr 1e-5 --wd 1e-1 --FL True 
+CUDA_VISIBLE_DEVICES=2,3 python3 main.py --mode MOCO --lr 1e-4 --wd 1e-2 &
+CUDA_VISIBLE_DEVICES=6,7 python3 main.py --mode IBOT --lr 1e-5 --wd 1e-1  
 ```
 
 ## Result 
