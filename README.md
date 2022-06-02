@@ -58,8 +58,8 @@ First, a hyper-parameter setting suitable for each model was found through greed
 
 ```shell 
 CUDA_VISIBLE_DEVICES=0,1 python3 main.py --mode BASE --lr 5e-5 --wd 1e-4 --FL True & 
-CUDA_VISIBLE_DEVICES=4,5 python3 main.py --mode DINO --lr 5e-6 --wd 1e-1 --FL True &
-CUDA_VISIBLE_DEVICES=2,3 python3 main.py --mode MOCO --lr 1e-4 --wd 1e-2 --FL True &
+CUDA_VISIBLE_DEVICES=2,3 python3 main.py --mode DINO --lr 5e-6 --wd 1e-1 --FL True &
+CUDA_VISIBLE_DEVICES=4,5 python3 main.py --mode MOCO --lr 1e-4 --wd 1e-2 --FL True &
 CUDA_VISIBLE_DEVICES=6,7 python3 main.py --mode IBOT --lr 1e-5 --wd 1e-1 --FL True & 
 ```
 
