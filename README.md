@@ -28,9 +28,9 @@ Our team used the MVTec AD dataset provided by [MVTec AD Research](https://www.m
 
 ## Data augmentation 
 
-We experimented with different augmentation for each class object following the paper below. It was implemented on "augmentation.py"
+We experimented with different augmentation for each class object following the paper [5] below. It was implemented on "augmentation.py"
 
-<img width="606" alt="스크린샷 2022-06-02 오후 5 13 47" src="https://user-images.githubusercontent.com/52492949/171585717-8631dc48-9439-4ab7-9659-e3e027820d19.png">
+<img width="606" alt="스크린샷 2022-06-02 오후 5 13 47" src="https://user-images.githubusercontent.com/52492949/171585717-8631dc48-9439-4ab7-9659-e3e027820d19.png"> 
 
 
 ## Model 
@@ -59,8 +59,8 @@ First, a hyper-parameter setting suitable for each model was found through greed
 ```shell 
 CUDA_VISIBLE_DEVICES=0,1 python3 main.py --mode BASE --lr 5e-5 --wd 1e-4 --FL True & 
 CUDA_VISIBLE_DEVICES=4,5 python3 main.py --mode DINO --lr 5e-6 --wd 1e-1 --FL True &
-CUDA_VISIBLE_DEVICES=2,3 python3 main.py --mode MOCO --lr 1e-4 --wd 1e-2 &
-CUDA_VISIBLE_DEVICES=6,7 python3 main.py --mode IBOT --lr 1e-5 --wd 1e-1  
+CUDA_VISIBLE_DEVICES=2,3 python3 main.py --mode MOCO --lr 1e-4 --wd 1e-2 --FL True &
+CUDA_VISIBLE_DEVICES=6,7 python3 main.py --mode IBOT --lr 1e-5 --wd 1e-1 --FL True & 
 ```
 
 ## Result 
@@ -92,7 +92,7 @@ Baseline + Augmentation + Add the train data(outlier)
 | DINO	| MVTec-AD  	| 32 | 5e-6 	| 1e-1| 75.8|
 | iBOT 	| MVTec-AD  	| 32 | 1e-5 	| 1e-1 | 80.41|
 
-Baseline + Augmentation + Add the train data(outlier) + Focal loss[5] 
+Baseline + Augmentation + Add the train data(outlier) + Focal loss [6] 
 
 | Model 	| Dataset 	| Batch size | Learning rate | Weight decay | Accuracy(test) 	|
 |:---------:|:--------:|:---------------------------------------:|:-----:|:---:|:---:|
@@ -111,8 +111,8 @@ Baseline + Augmentation + Add the train data(outlier) + Focal loss[5]
 - [2] [Momentum Contrast for Unsupervised Visual Representation Learning](https://arxiv.org/abs/1911.05722)  
 - [3] [Emerging Properties in Self-Supervised Vision Transformers](https://arxiv.org/abs/2104.14294)  
 - [4] [iBOT: Image BERT Pre-Training with Online Tokenizer](https://arxiv.org/abs/2111.07832)
-- [5] [Focal Loss for Dense Object Detection](https://arxiv.org/abs/1708.02002)
-
+- [5] [Data augmentation and pre-trained networks for extremely low data regimes unsupervised visual inspection](https://arxiv.org/abs/2106.01277)
+- [6] [Focal Loss for Dense Object Detection](https://arxiv.org/abs/1708.02002)
 
 
 
