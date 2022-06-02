@@ -1,6 +1,6 @@
 # Team Project in Deep Learning 
 
-This project conducted a comparative experiment on the anomaly detection performance between several models. [ViT, Moco, DINO, IBOT]
+This project conducted a comparative experiment on the anomaly detection performance between several models. [ViT, Moco, DINO, iBOT]
 
 
 ## Requirements 
@@ -23,11 +23,19 @@ git clone https://github.com/tjtmddnjswkd/DL_TEAM_PROJECT.git
 
 ### Prepare a dataset(MVTec AD Dataset)
 
-Our team used the MVTec AD dataset provided by [MVTec AD Research](https://www.mvtec.com/company/research/datasets/mvtec-ad, "mvtec-ad"). The MVTec AD Dataset consists of n trains and m validation sets. 
+Our team used the MVTec AD dataset provided by [MVTec AD Research](https://www.mvtec.com/company/research/datasets/mvtec-ad, "mvtec-ad"). The MVTec AD Dataset consists of n trains and m validation sets. In the case of the above task, there are 15 tasks to be classified.
+
+
+### Data augmentation 
+
+It was experimented with defferent augmentation for each object referring to the paper below. 
+
+<img width="606" alt="스크린샷 2022-06-02 오후 5 13 47" src="https://user-images.githubusercontent.com/52492949/171585717-8631dc48-9439-4ab7-9659-e3e027820d19.png">
+
 
 ### Model 
 
-Our team using ViT, Moco, DINO, IBOT. 
+Our team using ViT, Moco, DINO, iBOT. 
 
 ### Usage 
 
@@ -59,7 +67,7 @@ Baseline
 | Base(ViT) 	| MVTec-AD 	| 32 | 5e-5 	| 1e-4 | 69.7 |
 | Moco 	| MVTec-AD  	| 32 | 1e-4 	| 1e-2 | 45.74|
 | DINO	| MVTec-AD  	| 32 | 5e-6 	| 1e-1| 60.95|
-| IBOT 	| MVTec-AD  	| 32 | 1e-5 	| 1e-1 | 63.86|
+| iBOT 	| MVTec-AD  	| 32 | 1e-5 	| 1e-1 | 63.86|
 
 Baseline + Augmentation 
 
@@ -68,7 +76,7 @@ Baseline + Augmentation
 | Base(ViT) 	| MVTec-AD 	| 32 | 5e-5 	| 1e-4 | 77.69 |
 | Moco 	| MVTec-AD  	| 32 |  1e-4	| 1e-2 | 44.9 |
 | DINO	| MVTec-AD  	| 32 | 5e-6 	| 1e-1| 71.8|
-| IBOT 	| MVTec-AD  	| 32 |  1e-5 	| 1e-1 | 73.25|
+| iBOT 	| MVTec-AD  	| 32 |  1e-5 	| 1e-1 | 73.25|
 
 Baseline + Augmentation + Add the train data(outlier) 
 
@@ -77,7 +85,7 @@ Baseline + Augmentation + Add the train data(outlier)
 | Base(ViT) 	| MVTec-AD 	| 32 |  5e-5	| 1e-4| 79.97 |
 | Moco 	| MVTec-AD  	| 32 |  1e-4	| 1e-2 | 74.63 |
 | DINO	| MVTec-AD  	| 32 | 5e-6 	| 1e-1| 75.8|
-| IBOT 	| MVTec-AD  	| 32 | 1e-5 	| 1e-1 | 80.41|
+| iBOT 	| MVTec-AD  	| 32 | 1e-5 	| 1e-1 | 80.41|
 
 Baseline + Augmentation + Add the train data(outlier) + Focal loss 
 
@@ -86,7 +94,7 @@ Baseline + Augmentation + Add the train data(outlier) + Focal loss
 | Base(ViT) 	| MVTec-AD 	| 32 |  	  5e-5	| 1e-4 | 80.13 |
 | Moco 	| MVTec-AD  	| 32 |  	1e-4	| 1e-2 | 73.59 |
 | DINO	| MVTec-AD  	| 32 |  	5e-6 	| 1e-1| 77.12|
-| IBOT 	| MVTec-AD  	| 32 |  	1e-5 	| 1e-1 | 80.31|
+| iBOT 	| MVTec-AD  	| 32 |  	1e-5 	| 1e-1 | 80.31|
 
 
 
