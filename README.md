@@ -9,8 +9,8 @@ This project conducted a comparative experiment on the anomaly detection perform
 Cuda >= 10.2
 Python3 >= 3.7
 PyTorch >= 1.8.0
-Torchvision >= 0.10.0
-Imgaug # 
+Torchvision >= 0.11.0
+Imgaug >= 0.4.0 
 ``` 
 
 # Quickstart 
