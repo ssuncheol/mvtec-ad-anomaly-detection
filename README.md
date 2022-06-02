@@ -54,6 +54,8 @@ It is implemented under multi-gpu setting using data parallel.
 
 ### How to train 
 
+Firt, a hyper-parameter setting suitable for each model was found through grid search algorithm. In this project, after finding the optimal hyper-parameter for each model, experiments were conducted based on various conditions. The experiment proceeded as follows. 
+
 ```shell 
 
 ```
