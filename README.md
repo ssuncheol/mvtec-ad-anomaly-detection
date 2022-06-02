@@ -23,7 +23,7 @@ git clone https://github.com/tjtmddnjswkd/DL_TEAM_PROJECT.git
 
 ## Prepare a dataset
 
-Our team used the MVTec AD dataset provided by [MVTec AD Research](https://www.mvtec.com/company/research/datasets/mvtec-ad "mvtec-ad"). The MVTec AD Dataset consists of n trains and m validation sets. In the case of the above task, there are 15 tasks to be classified.
+Our team used the MVTec AD dataset provided by [MVTec AD Research](https://www.mvtec.com/company/research/datasets/mvtec-ad). The MVTec AD Dataset consists of n trains and m validation sets. In the case of the above task, there are 15 tasks to be classified.
 
 
 ## Data augmentation 
