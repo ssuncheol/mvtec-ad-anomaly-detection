@@ -28,14 +28,14 @@ Our team used the MVTec AD dataset provided by [MVTec AD Research](https://www.m
 
 ## Data augmentation 
 
-It was experimented with defferent augmentation for each object referring to the paper below. It was implemented on "augmentation.py"
+We experimented with different augmentation for each class object following the paper below. It was implemented on "augmentation.py"
 
 <img width="606" alt="스크린샷 2022-06-02 오후 5 13 47" src="https://user-images.githubusercontent.com/52492949/171585717-8631dc48-9439-4ab7-9659-e3e027820d19.png">
 
 
 ## Model 
 
-Our team using ViT[1], Moco[2], DINO[3], iBOT[4]. 
+Our team used ViT[1], Moco[2], DINO[3], iBOT[4]. 
 
 ### Usage 
 
@@ -54,7 +54,7 @@ It is implemented under multi-gpu setting using data parallel.
 
 ### How to train 
 
-Firt, a hyper-parameter setting suitable for each model was found through grid search algorithm. In this project, after finding the optimal hyper-parameter for each model, experiments were conducted based on various conditions. The experiment proceeded as follows. 
+First, a hyper-parameter setting suitable for each model was found through grid search algorithm. In this project, after finding the optimal hyper-parameter for each model, experiments were conducted based on various conditions. The experiment proceeded as follows. 
 
 ```shell 
 CUDA_VISIBLE_DEVICES=0,1 python3 main.py --mode BASE --lr 5e-5 --wd 1e-4 --FL True & 
