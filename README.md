@@ -56,37 +56,37 @@ It is implemented under multi-gpu setting using data parallel.
 
 | Model 	| Dataset 	| Batch size | Learning rate | Weight decay | Accuracy(test) 	|
 |:---------:|:--------:|:---------------------------------------:|:-----:|:---:|:---:|
-| Base(ViT) 	| MVTec-AD 	| 32 |  	| | |
-| Moco 	| MVTec-AD  	| 32 |  	| | |
-| DINO	| MVTec-AD  	| 32 |  	| | |
-| IBOT 	| MVTec-AD  	| 32 |  	| | |
+| Base(ViT) 	| MVTec-AD 	| 32 | 5e-5 	| 1e-4 | 69.7 |
+| Moco 	| MVTec-AD  	| 32 | 1e-4 	| 1e-2 | 45.74|
+| DINO	| MVTec-AD  	| 32 | 5e-6 	| 1e-1| 60.95|
+| IBOT 	| MVTec-AD  	| 32 | 1e-5 	| 1e-1 | 63.86|
 
-2. Baseline with augmentation 
-
-| Model 	| Dataset 	| Batch size | Learning rate | Weight decay | Accuracy(test) 	|
-|:---------:|:--------:|:---------------------------------------:|:-----:|:---:|:---:|
-| Base(ViT) 	| MVTec-AD 	| 32 |  	| | |
-| Moco 	| MVTec-AD  	| 32 |  	| | |
-| DINO	| MVTec-AD  	| 32 |  	| | |
-| IBOT 	| MVTec-AD  	| 32 |  	| | |
-
-3. Baseline with train augmentation 
+2. + Augmentation 
 
 | Model 	| Dataset 	| Batch size | Learning rate | Weight decay | Accuracy(test) 	|
 |:---------:|:--------:|:---------------------------------------:|:-----:|:---:|:---:|
-| Base(ViT) 	| MVTec-AD 	| 32 |  	| | |
-| Moco 	| MVTec-AD  	| 32 |  	| | |
-| DINO	| MVTec-AD  	| 32 |  	| | |
-| IBOT 	| MVTec-AD  	| 32 |  	| | |
+| Base(ViT) 	| MVTec-AD 	| 32 | 5e-5 	| 1e-4 | 77.69 |
+| Moco 	| MVTec-AD  	| 32 |  1e-4	| 1e-2 | 44.9 |
+| DINO	| MVTec-AD  	| 32 | 5e-6 	| 1e-1| 71.8|
+| IBOT 	| MVTec-AD  	| 32 |  1e-5 	| 1e-1 | 73.25|
 
-4. Baseline with focal loss 
+3. + Add the train data(outlier) 
 
 | Model 	| Dataset 	| Batch size | Learning rate | Weight decay | Accuracy(test) 	|
 |:---------:|:--------:|:---------------------------------------:|:-----:|:---:|:---:|
-| Base(ViT) 	| MVTec-AD 	| 32 |  	| | |
-| Moco 	| MVTec-AD  	| 32 |  	| | |
-| DINO	| MVTec-AD  	| 32 |  	| | |
-| IBOT 	| MVTec-AD  	| 32 |  	| | |
+| Base(ViT) 	| MVTec-AD 	| 32 |  5e-5	| 1e-4| 79.97 |
+| Moco 	| MVTec-AD  	| 32 |  1e-4	| 1e-2 | 74.63 |
+| DINO	| MVTec-AD  	| 32 | 5e-6 	| 1e-1| 75.8|
+| IBOT 	| MVTec-AD  	| 32 | 1e-5 	| 1e-1 | 80.41|
+
+4. + Focal loss 
+
+| Model 	| Dataset 	| Batch size | Learning rate | Weight decay | Accuracy(test) 	|
+|:---------:|:--------:|:---------------------------------------:|:-----:|:---:|:---:|
+| Base(ViT) 	| MVTec-AD 	| 32 |  	  5e-5	| 1e-4 | 80.13 |
+| Moco 	| MVTec-AD  	| 32 |  	1e-4	| 1e-2 | 73.59 |
+| DINO	| MVTec-AD  	| 32 |  	5e-6 	| 1e-1| 77.12|
+| IBOT 	| MVTec-AD  	| 32 |  	1e-5 	| 1e-1 | 80.31|
 
 
 
