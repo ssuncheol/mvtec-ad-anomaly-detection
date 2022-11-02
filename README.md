@@ -1,4 +1,4 @@
-# Team Project in Deep Learning 
+# MVTEC-AD Anomaly detection 
 
 This project conducted a comparative experiment on the anomaly detection performance between several models. [ViT(supervised), Moco v3, DINO, iBOT]
 
